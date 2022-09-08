@@ -1,0 +1,206 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[SSH] script:
+
+cd /var/www/BHT-EMR-API
+git fetch --tags -f
+git checkout v4.15.27 -f
+git describe --tags > HEAD
+./update-api.sh
+cd /var/www/HIS-Core
+git fetch --tags -f
+git checkout v1.3.0 -f
+git describe --tags > HEAD
+
+
+[SSH] executing...
+HEAD is now at 2366d15a Merge pull request #209 from HISMalawi/2022_q4_reports
+Unknown ruby interpreter version (do not know how to handle): >=2.5.3,<3.0.0.
+Using /home/ubuntu/.rvm/gems/ruby-2.5.3
+Resolving dependencies...
+Using rake 13.0.6
+Using concurrent-ruby 1.1.10
+Using minitest 5.15.0
+Using thread_safe 0.3.6
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.6.0
+Using crass 1.0.6
+Using rack 2.2.3
+Using nio4r 2.5.8
+Using websocket-extensions 0.1.5
+Using mini_mime 1.1.2
+Using arel 9.0.0
+Using marcel 1.0.2
+Using public_suffix 4.0.7
+Using bindex 0.8.1
+Using msgpack 1.5.1
+Using bundler 2.2.27
+Using byebug 11.1.3
+Using chronic 0.10.2
+Using httpclient 2.8.3
+Using mime-types-data 3.2022.0105
+Using multi_json 1.15.0
+Using diff-lcs 1.5.0
+Using unf_ext 0.0.8.1
+Using method_source 1.0.0
+Using thor 1.2.1
+Using event_emitter 0.2.6
+Using ffi 1.15.5
+Using parallel 1.20.1
+Using multi_xml 0.6.0
+Using json 2.6.2
+Using websocket 1.2.9
+Using http-accept 1.7.0
+Using rb-fsevent 0.11.1
+Using ruby_dep 1.5.0
+Using mysql2 0.5.4
+Using netrc 0.11.0
+Using power_assert 2.0.1
+Using rubyzip 2.3.2
+Using rspec-support 3.11.0
+Using spring 2.1.1
+Using i18n 1.10.0
+Using tzinfo 1.2.9
+Using nokogiri 1.12.5 (x86_64-linux)
+Using rack-test 1.1.0
+Using sprockets 4.0.3
+Using passenger 6.0.13
+Using rack-cors 1.1.1
+Using puma 4.3.12
+Using websocket-driver 0.7.5
+Using mail 2.7.1
+Using addressable 2.8.0
+Using bootsnap 1.11.1
+Using whenever 1.0.0
+Using mime-types 3.4.1
+Using unf 0.1.4
+Using rb-inotify 0.10.1
+Using websocket-client-simple 0.3.1
+Using test-unit 3.5.3
+Using rspec-core 3.11.0
+Using rspec-expectations 3.11.0
+Using rspec-mocks 3.11.1
+Using loofah 2.17.0
+Using roo 2.8.3
+Using json-schema 2.8.1
+Using activesupport 5.2.7
+Using rails-html-sanitizer 1.4.2
+Using couchrest 2.0.1
+Using domain_name 0.5.20190701
+Using httparty 0.20.0
+Using listen 3.1.5
+Using rspec 3.11.0
+Using rails-dom-testing 2.0.3
+Using globalid 1.0.0
+Using activemodel 5.2.7
+Using factory_bot 6.2.1
+Using http-cookie 1.0.4
+Using socket.io-client-simple 1.2.1
+Using spring-watcher-listen 2.0.1
+Using activejob 5.2.7
+Using activerecord 5.2.7
+Using rest-client 2.1.0
+Using composite_primary_keys 11.3.1
+Using actionview 5.2.7
+Using actionpack 5.2.7
+Using actioncable 5.2.7
+Using actionmailer 5.2.7
+Using activestorage 5.2.7
+Using railties 5.2.7
+Using sprockets-rails 3.4.2
+Using rails 5.2.7
+Using factory_bot_rails 6.2.0
+Using rspec-rails 5.1.1
+Using rswag-api 2.5.1
+Using rswag-specs 2.5.1
+Using rswag-ui 2.5.1
+Using web-console 3.7.0
+Using emr_ohsp_interface 1.1.0
+Using his_emr_api_lab 1.1.24
+Using his_emr_api_radiology 0.0.8
+Updating files in vendor/cache
+Removing outdated .gem files from vendor/cache
+  * loofah-2.12.0.gem
+  * sprockets-rails-3.4.0.gem
+  * rspec-support-3.10.3.gem
+  * i18n-1.8.11.gem
+  * rb-fsevent-0.11.0.gem
+  * activejob-5.2.6.gem
+  * minitest-5.14.4.gem
+  * ffi-1.15.4.gem
+  * actionpack-5.2.6.gem
+  * concurrent-ruby-1.1.9.gem
+  * globalid-0.5.2.gem
+  * actionview-5.2.6.gem
+  * activemodel-5.2.6.gem
+  * factory_bot-6.2.0.gem
+  * rails-5.2.6.gem
+  * his_emr_api_radiology-0.0.7.gem
+  * unf_ext-0.0.8.gem
+  * rspec-expectations-3.10.1.gem
+  * diff-lcs-1.4.4.gem
+  * msgpack-1.4.2.gem
+  * passenger-6.0.12.gem
+  * rspec-rails-5.0.2.gem
+  * activesupport-5.2.6.gem
+  * mime-types-data-3.2021.1115.gem
+  * actioncable-5.2.6.gem
+  * activerecord-5.2.6.gem
+  * bootsnap-1.9.1.gem
+  * test-unit-3.5.1.gem
+  * thor-1.1.0.gem
+  * sprockets-4.0.2.gem
+  * rswag-api-2.4.0.gem
+  * rspec-3.10.0.gem
+  * railties-5.2.6.gem
+  * actionmailer-5.2.6.gem
+  * rspec-core-3.10.1.gem
+  * rswag-ui-2.4.0.gem
+  * puma-4.3.10.gem
+  * rspec-mocks-3.10.2.gem
+  * activestorage-5.2.6.gem
+  * mysql2-0.5.3.gem
+Bundle complete! 26 Gemfile dependencies, 101 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+HEAD is now at 9bb7e6e v1.3.0
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] script:
+
+cd ~
+python3 extractcontacts.py
+
+[SSH] executing...
+Selecting first name and emails
+fetching data from PostgreSQL complete no results to fetch
+PostgreSQL connection is closed
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[Update-OPC-Testbench] $ /bin/sh -xe /tmp/jenkins2008584335302480926.sh
++ cd /var/lib/jenkins/jobs/Update-OPC-Testbench
++ rm -rf my_contacts.txt
++ scp -i /home/sonarqb-user/DevOpsKey.pem ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:~/my_contacts.txt /var/lib/jenkins/jobs/Update-OPC-Testbench
++ cp /var/lib/jenkins/jobs/Update-OPC-Testbench/my_contacts.txt /var/lib/jenkins/jobs/Update-OPC-Testbench/sendMail
+[Update-OPC-Testbench] $ /bin/sh -xe /tmp/jenkins12861774409951397695.sh
++ cd /var/lib/jenkins/jobs/Update-OPC-Testbench/sendMail
++ python3 sendMailTestbench.py
+Traceback (most recent call last):
+  File "sendMailTestbench.py", line 87, in <module>
+    main()
+  File "sendMailTestbench.py", line 40, in main
+    names, emails = get_contacts('/var/lib/jenkins/jobs/Update-OPC-Testbench/sendMail/mycontacts.txt') # read contacts
+  File "sendMailTestbench.py", line 25, in get_contacts
+    names.append(a_contact.split()[0])
+IndexError: list index out of range
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
