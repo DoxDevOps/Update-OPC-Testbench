@@ -1,0 +1,58 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.7.1"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.34.5">
+      <projectUrl>https://github.com/DoxDevOps/Update-OPC-Testbench.git/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>ubuntu@ec2-18-191-180-30.us-east-2.compute.amazonaws.com:22</siteName>
+      <command>cd /var/www/BHT-EMR-API
+git fetch --tags -f
+git checkout v4.15.27 -f
+git describe --tags &gt; HEAD
+./update-api.sh
+cd /var/www/HIS-Core
+git fetch --tags -f
+git checkout v1.3.0 -f
+git describe --tags &gt; HEAD
+</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:22</siteName>
+      <command>cd ~
+python3 extractcontacts.py</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+    <hudson.tasks.Shell>
+      <command>cd ~/jobs/Update-OPC-Testbench
+rm -rf my_contacts.txt
+scp -i /home/sonarqb-user/DevOpsKey.pem ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:~/my_contacts.txt ~/jobs/Update-OPC-Testbench
+cp ~/jobs/Update-OPC-Testbench/my_contacts.txt /var/www/sendMail</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>cd /var/www/sendMail
+python3 sendMailTestbench.py</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

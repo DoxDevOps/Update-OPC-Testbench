@@ -1,0 +1,40 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[SSH] script:
+
+cd /var/www/BHT-EMR-API
+git fetch --tags -f
+git checkout v4.15.27 -f
+git describe --tags > HEAD
+./update-api.sh
+cd /var/www/HIS-Core
+git fetch --tags -f
+git checkout v1.2.26 -f
+git describe --tags > HEAD
+cd ~
+python3 extractcontacts.py
+
+[SSH] executing...
+bash: line 1: cd: /var/www/BHT-EMR-API: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+bash: line 5: ./update-api.sh: No such file or directory
+bash: line 6: cd: /var/www/HIS-Core: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+Selecting first name and emails
+Error while fetching data from PostgreSQL no results to fetch
+PostgreSQL connection is closed
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[Update-OPC-Testbench] $ /bin/sh -xe /tmp/jenkins631344719147589647.sh
++ cd /var/lib/jenkins/jobs/Update-OPC-Testbench
++ rm -rf my_contacts.txt
++ scp -i /home/sonarqb-user/DevOpsKey.pem ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:~/my_contacts.txt /var/lib/jenkins/jobs/Update-OPC-Testbench
++ cp /var/lib/jenkins/jobs/Update-OPC-Testbench/my_contacts.txt /var/www/sendMail
+Finished: SUCCESS

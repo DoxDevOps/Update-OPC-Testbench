@@ -1,0 +1,35 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[SSH] script:
+
+cd /var/www
+ls
+
+[SSH] executing...
+20211222061644_add_vbox_id_to_location.rb
+BHT-Core
+BHT-Core-ANC
+BHT-Core-OPD
+BHT-EMR-API
+BHT-EMR-API-HTS
+BHT-EMR-API-NewArch
+BHT-EMR-API_Anc
+BHT-EMR-API_OPD
+BHT-EMR-API_old
+HIS-Core
+art-poc-setup
+config.json
+dde4
+dde4-dashboard
+html
+lims-websocket
+lims_dashboard
+nlims_controller
+nlims_data_syncroniser
+nlims_internal_dashboard
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

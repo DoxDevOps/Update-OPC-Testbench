@@ -1,0 +1,8 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[Update-OPC-Testbench] $ /bin/sh -xe /tmp/jenkins2160577720246010987.sh
++ scp -i /home/sonarqb-user/DevOpsKey.pem ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:~/my_contacts.txt /var/lib/jenkins/var/www
+/var/lib/jenkins/var/www: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,9 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[Update-OPC-Testbench] $ /bin/sh -xe /tmp/jenkins8488478756206089283.sh
++ scp -i /home/sonarqb-user/DevOpsKey.pem ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com:~/my_contacts.txt ./
+Load key "/home/sonarqb-user/DevOpsKey.pem": Permission denied
+ubuntu@ec2-3-141-44-46.us-east-2.compute.amazonaws.com: Permission denied (publickey).
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

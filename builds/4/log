@@ -1,0 +1,22 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[SSH] script:
+
+cd /var/www/BHT-EMR-API
+git fetch --tags -f
+git checkout v4.15.27 -f
+git describe --tags > HEAD
+./update-api.sh
+
+
+
+[SSH] executing...
+HEAD is now at 2366d15a Merge pull request #209 from HISMalawi/2022_q4_reports
+bash: line 5: ./update-api.sh: Permission denied
+
+[SSH] completed
+[SSH] exit-status: 126
+
+Build step 'Execute shell script on remote host using ssh' marked build as failure
+Finished: FAILURE

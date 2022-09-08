@@ -1,0 +1,37 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Update-OPC-Testbench
+[SSH] script:
+
+cd /var/www/BHT-EMR-API
+git fetch --tags -f
+git checkout v4.15.20 -f
+git describe --tags > HEAD
+
+
+
+[SSH] executing...
+From https://github.com/HISMalawi/BHT-EMR-API
+ * [new branch]        2022_q4_reports         -> origin/2022_q4_reports
+ * [new branch]        HTS                     -> origin/HTS
+ * [new branch]        add/qr_code_national_id -> origin/add/qr_code_national_id
+ * [new branch]        add/tb_concepts         -> origin/add/tb_concepts
+   1c03df2c..2366d15a  development             -> origin/development
+ * [new branch]        fix/emc_duplicate_records -> origin/fix/emc_duplicate_records
+ * [new branch]        fix/incomplete_visits   -> origin/fix/incomplete_visits
+ * [new branch]        fix/merge-routine       -> origin/fix/merge-routine
+ * [new branch]        fix/radiology_issues    -> origin/fix/radiology_issues
+ * [new branch]        fix/tb_treatment_logic  -> origin/fix/tb_treatment_logic
+ * [new branch]        fixStagingHistoryPrintout -> origin/fixStagingHistoryPrintout
+ * [new branch]        new/2022_q4_report      -> origin/new/2022_q4_report
+ * [new tag]           v4.15.24                -> v4.15.24
+ * [new tag]           v4.15.25                -> v4.15.25
+ * [new tag]           v4.15.26                -> v4.15.26
+ * [new tag]           v4.15.27                -> v4.15.27
+Previous HEAD position was af03ad91 Merge pull request #180 from HISMalawi/fix/cohort-build
+HEAD is now at f55e5cd5 Merge pull request #182 from HISMalawi/add/art-start-date
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS
