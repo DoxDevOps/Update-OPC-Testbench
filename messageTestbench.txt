@@ -1,0 +1,14 @@
+Hi ${PERSON_NAME},<br/>
+<br/>
+Point of Care (POC) on Testbench has been updated to the below versions.<br/>
+BHT-API-EMR: V4.15.27 <br/>
+HIS-Core: V1.3.0<br/>
+<br/>
+<br/>
+To access the application,<a href="http://testbench.hismalawi.org/apps/1/simulator">Click here. </a><br/>
+<br/>
+Please refer to the attached release notes<br/>
+<br/>
+Thanks.<br/>
+<br/>
+DevOps Team<br/>
